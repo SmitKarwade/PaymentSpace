@@ -1,6 +1,7 @@
 services:
   - type: web
     name: springboot-app
+    port: ${PORT:8080}
     env: java
     plan: free
     buildCommand: ./mvnw clean package
